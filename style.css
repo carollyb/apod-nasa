@@ -15,7 +15,8 @@ h1{
     color: rgba(155, 59, 48, 0.726);
     font-size: 60px;
     padding: 20px;
-    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
+    background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.178));
+    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.075);
     border-radius: 30px;
     transition: 2s;
 }
@@ -100,10 +101,17 @@ footer{
     border-bottom-right-radius: 0;
     font-size: 25px;
     color: transparent;
-    text-shadow: 0 0 2px rgba(133, 128, 128, 0.5);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
+a{
+    color: rgba(155, 59, 48, 0.726);
+}
+a:hover {
+    cursor: pointer;
+    color:rgba(155, 59, 48, 0.726);
+}
 
 
 
