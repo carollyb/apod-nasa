@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(23,20,27,255);
+}
+
+h1{
+    font-family:  'DM Serif Display', serif;
+    color: rgba(155, 59, 48, 0.726);
+    font-size: 60px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
+    border-radius: 30px;
+    transition: 2s;
+}
+
+label {
+    font-family: 'DM Serif Display', serif;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 22px;
+    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
+    width: 300px;
+    text-align: center;
+}
+
+#dia {
+    font-family: 'DM Serif Display', serif;
+    background-color: rgba(23,20,27,255);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: 80px;
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
+    transition: 2s;
+
+}
+
+#botao {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background: none;
+    padding: 20px;
+    color: white;
+    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
+    transition: 3s;
+}
+
+#fotoDia {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: white;
+    background: none;
+}
+
+img {
+    max-width: 900px;
+    border-radius: 40px;
+    transition: 3s;
+}
+
+#copyright {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+.trn {
+    width: 900px;
+    color:white;
+    font-family: 'Inconsolata', monospace;    
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#ft {
+    position: relative;
+}
+
+footer{
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: rgba(155, 59, 48, 0.726);
+}
+
+#botao:hover{
+    background: url(./labels.jpg);
+    height: 300px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 25px;
+    color: transparent;
+    text-shadow: 0 0 2px rgba(133, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+
+
+
