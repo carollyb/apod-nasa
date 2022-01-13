@@ -9,13 +9,14 @@ body,main {
     background-color: rgba(23,20,27,255);
 }
 
-header{
-    display: flex;
-    justify-self: row;
-    align-self: left;
-    font-family: 'DM Serif Display', serif;
+header,.navbar {
+    font-family: 'Inconsolata', monospace;
     font-size: 22px;
     color: rgba(155, 59, 48, 0.726);
+}
+
+.navbar-nav{
+    padding-left: 400px;
 }
 
 h1{
@@ -94,8 +95,12 @@ img {
     position: relative;
 }
 
+a{
+    color: rgba(155, 59, 48, 0.726);
+}
+
 footer{
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 22px;
     color: rgba(155, 59, 48, 0.726);
 }
@@ -113,12 +118,8 @@ footer{
     cursor: pointer;
 }
 
-a{
-    color: rgba(155, 59, 48, 0.726);
-}
 a:hover {
     cursor: pointer;
-    color:rgba(155, 59, 48, 0.726);
     color: rgba(248, 107, 91, 0.726)
 }
 
