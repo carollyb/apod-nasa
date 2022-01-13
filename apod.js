@@ -1,14 +1,14 @@
-$("#video").hide()
-$("#botao").click(function () {
+$("#video").hide() //v
+$("#botao").click(function () { //c
   let apodDia = $("#dia").val();
   let apiKey = "kwPL2iqJxey8eE55Qooxweeif9eCPox9Yu7seLaG";
   $.ajax({
     type: "GET",
-    url: `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${apodDia}`, //tenho que dar um jeito de passar a data do input pra cá, formatada
+    url: `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${apodDia}`, //m
     success: function (result) {
       console.log(result);
       let tipoDaMidia = result.media_type;
-      if (tipoDaMidia == "image") {
+      if (tipoDaMidia == "image") { //v
         $("#ft").hide()
         $("#imagem").show()
         $("#imagem").attr("src", result.hdurl)
@@ -21,7 +21,7 @@ $("#botao").click(function () {
       };
 
       $("#fotoDia").text(`Foto astronômica do dia: ${result.title}`),
-
+//v
       $(".trn").text(`Explicação da imagem: ${result.explanation}`);
       let copyR = result.copyright;
       if (copyR == undefined) {
@@ -32,5 +32,3 @@ $("#botao").click(function () {
     },
   });
 });
-//e quando nao for foto? passar um if  pra colocar o video
-//formato do link com data https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2018-10-07

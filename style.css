@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
 
-
-body {
+body,main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(23,20,27,255);
+}
+
+header{
+    display: flex;
+    justify-self: row;
+    align-self: left;
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: rgba(155, 59, 48, 0.726);
 }
 
 h1{
@@ -111,6 +119,7 @@ a{
 a:hover {
     cursor: pointer;
     color:rgba(155, 59, 48, 0.726);
+    color: rgba(248, 107, 91, 0.726)
 }
 
 
