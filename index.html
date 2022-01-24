@@ -11,14 +11,14 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/assets/style/style.css" />
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand">
-          <img src="./Nasa-Logo.png" height="40" alt=""></a>
+          <img src="./src/assets/images/Nasa-Logo.png" height="40" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,7 +44,7 @@
       <label>escolha uma data</label><br />
       <input type="date" id="dia" /><br />
 
-      <button id="botao">entre no cosmos</button><br />
+      <button id="botao" onclick="apodController.envia(event)">entre no cosmos</button><br />
 
       <div id="fotoDia"></div>
       <br />
@@ -55,7 +55,7 @@
       </div>
       <span class="trn"></span>
       <div>
-        <img id="ft" src="./rem.jpg" />
+        <img id="ft" src="./src/assets/images/rem.jpg" />
       </div>
     </main>
 
@@ -78,7 +78,7 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <script src="./apod.js"></script>
+    <!-- <script src="./apod.js"></script> -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -97,5 +97,11 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/app/model/Api.js"></script>
+    <script src="./src/app/controller/ApodController.js"></script>
+    <script src="./src/app/view/ApodView.js"></script>
+    <script>
+      let apodController = new ApodController()
+    </script>
   </body>
 </html>
