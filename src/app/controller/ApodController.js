@@ -15,7 +15,7 @@ class ApodController {
 
         let resp = await api.request()
 
-        resp.code == 400 ? this.apodView.error(resp) : this.apodView.update(resp)
+        resp.code == 500 ? this.apodView.error(resp) : this.apodView.update(resp)
                  //this.apodView.error(resp) : this.apodView.update(resp)
     }
 }

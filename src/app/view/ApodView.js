@@ -1,8 +1,10 @@
 class ApodView {
     constructor(){
-        this.imagem = $("#imagem")
-        this.video = $("#video")
-        this.explanation =  $(".trn")
+        this.imagem = $("#imagem");
+        this.video = $("#video");
+        this.explanation =  $(".trn");
+        this.titulo = $('#fotoDia')
+        this.copyright = $('#copyright')
     }
 
     update(model){
@@ -19,9 +21,16 @@ class ApodView {
             this.video.attr("src", model.url)
             this.imagem.hide()
         }
+        this.titulo.text(`Foto astronômica do dia: ${model.title}`);
+
+        this.copyright.text(`${model.copyright}`)
+
+        this.explanation.html(`<p>${model.explanation}</p>`)
+
     }
 
     error(model){
         //cria dinamicamente uma div para exibir msg de erro
+        this.explanation.html(`<p>Houve um problema interno! Aguarde e pesquise novamente.</p>`)
     }
 }
