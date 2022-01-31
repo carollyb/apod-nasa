@@ -2,7 +2,8 @@ class ApodController {
     constructor(){
         $("#video").hide();
         this.apodDia = $("#dia");
-
+        this.apodView = new ApodView()
+        //instancia o apodView
     }
 
     async envia(event){
@@ -12,8 +13,9 @@ class ApodController {
 
         let api = new Api(inputUser)
 
-        let resp = await api.request()    
-        console.log(resp);
-            
+        let resp = await api.request()
+
+        resp.code == 400 ? this.apodView.error(resp) : this.apodView.update(resp)
+                 //this.apodView.error(resp) : this.apodView.update(resp)
     }
 }
