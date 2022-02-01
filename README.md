@@ -23,5 +23,5 @@
 </div>
 
 ### Demonstração
-![Image](./demo.JPG)
-![Image](./demo2.JPG)
+![Image](./src/assets/images/demo.JPG)
+![Image](./src/assets/images/demo2.JPG)
