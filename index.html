@@ -18,14 +18,14 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand">
-          <img src="./src/assets/images/Nasa-Logo.png" height="40" alt=""></a>
+          <img src="./src/assets/images/Nasa-Logo.png" height="40" alt="nasa-logo" class="nasa-logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto align-self-end">
-            <li class="nav-item active">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
               <a class="nav-link" href="https://api.nasa.gov/" target="_blank">documentação API<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -40,9 +40,9 @@
     </header>
 
     <main>
-      <h1>✰ foto astronômica do dia ✰</h1><br>
+      <h1> foto astronômica do dia </h1><br>
       <label>escolha uma data</label><br />
-      <input type="date" id="dia" /><br />
+      <input type="date" id="dia" max="" /><br />
 
       <button id="botao" onclick="apodController.envia(event)">entre no cosmos</button><br />
 
@@ -52,11 +52,11 @@
       <img id="imagem" src=""/>
       <iframe id="video" src="" width="960" height="540" autoplay></iframe>
 
-      <div>
-        <small id="copyright"></small>
+      <div class="mt-3">
+        <small id="copyright" ></small>
       </div>
 
-      <article class="trn"></article>
+      <article class="trn mt-4"></article>
 
       <div>
         <img id="ft" src="./src/assets/images/rem.jpg" />
@@ -104,8 +104,11 @@
     <script src="./src/app/model/Api.js"></script>
     <script src="./src/app/controller/ApodController.js"></script>
     <script src="./src/app/view/ApodView.js"></script>
+    <script src="./src/app/helpers/DateHelper.js"></script>
     <script>
-      let apodController = new ApodController()
+      let apodController = new ApodController();
+      let dateHelper = new DateHelper();
+      dateHelper.today()
     </script>
   </body>
 </html>

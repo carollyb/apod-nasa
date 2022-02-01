@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300&family=Roboto+Mono:wght@600&family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body,main {
     display: flex;
@@ -9,40 +10,46 @@ body,main {
     background-color: rgba(23,20,27,255);
 }
 
-header,.navbar {
+header {
     font-family: 'Inconsolata', monospace;
     font-size: 22px;
     color: rgba(155, 59, 48, 0.726);
+    background-color: rgb(16, 16, 24);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
 
-.navbar-nav{
-    padding-left: 400px;
+.nasa-logo{
+    opacity: 30%;
 }
 
 h1{
-    font-family:  'DM Serif Display', serif;
-    color: rgba(155, 59, 48, 0.726);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: rgb(155, 59, 48);
     font-size: 60px;
     padding: 20px;
-    background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.178));
-    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.075);
-    border-radius: 30px;
+    background: linear-gradient(60deg, transparent, rgba(23,20,27,255));
+    border-bottom: solid;
     transition: 2s;
 }
 
 label {
-    font-family: 'DM Serif Display', serif;
-    border-radius: 10px;
-    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     color: rgba(255, 255, 255, 0.664);
     font-size: 22px;
-    box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
-    width: 300px;
     text-align: center;
 }
 
 #dia {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     background-color: rgba(23,20,27,255);
     border-radius: 10px;
     padding: 10px;
@@ -55,18 +62,21 @@ label {
 }
 
 #botao {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     font-size: 20px;
     border-radius: 20px;
     background: none;
     padding: 20px;
     color: white;
     box-shadow: inset 0px 0px 5px 5px rgba(245, 245, 245, 0.048);
-    transition: 3s;
+    transition: 2s;
 }
 
 #fotoDia {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     font-size: 24px;
     color: white;
     background: none;
@@ -103,6 +113,14 @@ footer{
     font-family: 'Inconsolata', monospace;
     font-size: 22px;
     color: rgba(155, 59, 48, 0.726);
+    background-color: rgb(16, 16, 24);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #botao:hover{

@@ -8,7 +8,7 @@ class ApodView {
     }
 
     update(model){
-        //você também pode criar o iframe dinamicamente para não ter q esconder
+        //pode criar o iframe dinamicamente para não ter q esconder
         let tipoDaMidia = model.media_type;
         if (tipoDaMidia == "image") { 
             $("#ft").hide()
@@ -23,14 +23,14 @@ class ApodView {
         }
         this.titulo.text(`Foto astronômica do dia: ${model.title}`);
 
-        this.copyright.text(`${model.copyright}`)
+        model.copyright ? this.copyright.text(`Copyright: ${model.copyright}`) : this.copyright.text(``)
 
         this.explanation.html(`<p>${model.explanation}</p>`)
 
     }
 
     error(model){
-        //cria dinamicamente uma div para exibir msg de erro
+        
         this.explanation.html(`<p>Houve um problema interno! Aguarde e pesquise novamente.</p>`)
     }
 }
